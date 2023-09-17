@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* font Caveat Brush */
+
+
+::-moz-selection {
+    color: #fff;
+    background: #775f32;
+}
+
+::selection {
+    color: #fff;
+    background: #775f32;
+}
+
+/* scroll bar */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(222, 192, 150);
+    border-radius: 3px;
+    background-color: rgb(231, 207, 181);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(222, 136, 55);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(222, 136, 55);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    /* scroll smoth */
+    scroll-behavior: smooth;
+}
+
+
+.lindungi {
+
+    /* agar tidak bisa di select text dan img */
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none
+}
+
+@font-face
+
+/*perintah untuk memanggil font eksternal*/
+    {
+    font-family: 'Caveat';
+    /*memberikan nama bebas untuk font*/
+    src: url('../font/CaveatBrush-Regular.ttf');
+    /*memanggil file font eksternalnya di folder nexa*/
+}
+
+
+.caveat {
+    font-family: 'Caveat';
+}
+
+
+
+
+.text-gradasi1 {
+    background: #CC9A51;
+    background: linear-gradient(to right, #CC9A51 30%, #8C4A3A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-gradasi2 {
+    background: #FFC994;
+    background: linear-gradient(to top right, #FFC994 32%, #F59C8E 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bg-gradasi1 {
+    background: rgb(202, 135, 28);
+    background: linear-gradient(198deg, rgba(202, 135, 28, 1) 0%, rgba(86, 52, 38, 1) 100%);
+}
+
+/* bg-items | budaya.hmtl */
+.bg-gradasi2 {
+    background: rgb(255, 153, 0);
+    background: radial-gradient(circle, rgba(255, 153, 0, 0.7096612326571253) 0%, rgba(255, 255, 255, 0) 63%);
+}
+
+.nav-bg1 {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+.nav-bg2 {
+    background: rgba(189, 121, 74, 0.36);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 3px solid rgba(189, 121, 74, 0.3);
+}
+
+/* hover efek navbar */
+/* Underline From Center */
+.hover-nav {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+
+.hover-nav:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: #eb8f16;
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.4s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hover-nav:hover:before,
+.hover-nav:focus:before,
+.hover-nav:active:before {
+    left: 0;
+    right: 0;
+}
