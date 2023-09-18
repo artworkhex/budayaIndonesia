@@ -958,6 +958,42 @@ video {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
+.bg-\[url\(\.\.\/asset\/\.png\)\] {
+  background-image: url(../asset/.png);
+}
+
+.bg-\[url\(\.\.\/asset\/\)\] {
+  background-image: url(../asset/);
+}
+
+.bg-\[url\(\.\.\/asset\/de\.png\)\] {
+  background-image: url(../asset/de.png);
+}
+
+.bg-\[url\(\.\.\/asset\/as\)\] {
+  background-image: url(../asset/as);
+}
+
+.bg-\[url\(\.\.\/asset\/asap\)\] {
+  background-image: url(../asset/asap);
+}
+
+.bg-\[url\(\.\.\/asset\/asap\.png\)\] {
+  background-image: url(../asset/asap.png);
+}
+
+.bg-\[url\(\.\.\/asset\/asap\.gif\)\] {
+  background-image: url(../asset/asap.gif);
+}
+
+.bg-\[url\(\.\.\/asset\/asap2\.gif\)\] {
+  background-image: url(../asset/asap2.gif);
+}
+
+.bg-\[url\(\.\.\/asset\/depan\.png\)\] {
+  background-image: url(../asset/depan.png);
+}
+
 .from-\[\#d7c471\] {
   --tw-gradient-from: #d7c471 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(215 196 113 / 0) var(--tw-gradient-to-position);
@@ -1777,6 +1813,10 @@ video {
 
   .lg1\:pt-60 {
     padding-top: 15rem;
+  }
+
+  .lg1\:text-left {
+    text-align: left;
   }
 
   .lg1\:text-2xl {
