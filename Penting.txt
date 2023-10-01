@@ -1,0 +1,7 @@
+
+===== ada beberapa video yang akan terputar otomatis tetapi jika tidak terputar =====
+1. buka file menggunakankan koneksi internet 
+2. gunakan extention live server
+3. gunakan perintah "npx tailwindcss -i src/input.css -o src/output.css" pada terminal di folder yang sama
+
+terimakasih
