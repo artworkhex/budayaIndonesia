@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Budaya Indonesia</title>
     <link href="src/output.css" rel="stylesheet">
-    <link rel="stylesheet" href="src/animasi.css">
+    <!-- <link rel="stylesheet" href="src/animasi.css"> -->
     <link rel="stylesheet" href="src/style.css">
     <link rel="stylesheet" href="src/sliders.css">
+    <!-- animasi scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- icon title -->
     <link rel="icon" href="asset/icon1.png" media="(prefers-color-scheme: light)">
     <link rel="icon" href="asset/icon1.png" media="(prefers-color-scheme: dark)">
 </head>
@@ -17,7 +20,7 @@
     <header id="first" class="bg-no-repeat bg-center bg-cover pt-4 ">
         <!-- navbar -->
         <nav id='menu'
-            class="slide-in-top nav-bg2 ml-4 px-10 h-[50px] md1:h-[60px] lg1:h-[65px] shadow-lg rounded-3xl lg1:text-2xl z-50 absolute  w-[90%] lg1:w-[98%] mt-3  ">
+            class="slide-in-top nav-bg2 ml-4  h-[50px] md1:h-[60px] lg1:h-[65px] shadow-lg rounded-3xl lg1:text-2xl z-50 absolute  w-[90%] lg1:w-[98%] mt-3  ">
             <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
             <ul>
                 <li> <a href="index.html">
@@ -44,163 +47,174 @@
         </nav>
         <!--  -->
         <div
-            class="blur text-center text-2xl md1:text-3xl lg1:text-9xl  font-bold caveat mt-20 lg1:mt-64 lg1:mb-32 caveat text-gradasi1 ">
+            class=" text-center text-5xl lg1:text-9xl  font-bold caveat mt-20 lg1:mt-64 lg1:mb-32 caveat text-gradasi1 ">
             keberagaaman di indonesia </div>
 
-
-        <!-- 1. jawa -->
-        <div
-            class="md1:flex text-center lg1:text-left  mt-10 lg1:mt-20 bg-gradasi1 xl1:px-24 mx-10 rounded-xl shadow-2xl py-10 items-center text-white">
-            <div class="absolute fade-in bg-gradasi2 m-auto z-0  block md1:hidden w-[85%] h-[45%] rounded-full"></div>
-            <img class="lindungi md1:w-[300px] lg1:w-[400px] z-30 xl1:w-[600px] xl2:w-[700px] w-[700px] px-5 lg1:px-0 fade-in-left "
-                src="asset/budaya/jawa.png" alt="">
-            <div
-                class="absolute fade-in bg-gradasi2 m-auto z-0  hidden lg1:block lg1:w-[50%] lg1:h-[100%] rounded-full">
-            </div>
-
-            <div class=" px-5 lg1:px-0 lg1:ml-5 fade-in-right">
+        <div class="px-7">
+            <!-- 1. jawa -->
+            <div data-aos="fade-left" data-aos-duration="800"
+                class="md1:flex text-center lg1:text-left  mt-10 lg1:mt-20 bg-gradasi1 xl1:px-24  rounded-xl shadow-2xl py-10 items-center text-white">
+                <div class="absolute fade-in bg-gradasi2 m-auto z-0  block md1:hidden w-[85%] h-[45%] rounded-full">
+                </div>
+                <img class="lindungi relative  md1:w-[300px] lg1:w-[400px] z-30 xl1:w-[600px] xl2:w-[700px] w-[700px] px-5 lg1:px-0  "
+                    src="asset/budaya/jawa.png" alt="">
                 <div
-                    class="font-bold mt-10 lg1:mt-0 md1:text-5xl lg1:text-6xl xl1:text-7xl text-2xl caveat text-gradasi2 ">
-                    Budaya di
-                    Jawa</div>
-                <img class="absolute opacity-20 -z-20 left-0 lindungi" src="asset/budaya/batik.png" alt="">
-                <div class="text-base md1:text-lg  lg1:text-2xl xl1:text-4xl my-5 opacity-50">
-                    Budaya Jawa yang diminati di luar negeri adalah Wayang kulit, Keris, Batik, Kebaya, dan Gamelan. Di
-                    Malaysia dan Filipina dikenal istilah keris karena pengaruh Majapahit.
+                    class="absolute fade-in  bg-gradasi2 m-auto z-0  hidden lg1:block lg1:w-[50%] lg1:h-[100%] rounded-full">
+                </div>
+
+                <div class=" px-5 lg1:px-0 lg1:ml-5 fade-in-right">
+                    <div
+                        class="font-bold mt-10 lg1:mt-0 md1:text-5xl lg1:text-6xl xl1:text-7xl text-2xl caveat text-gradasi2 ">
+                        Budaya di
+                        Jawa</div>
+                    <img class="absolute opacity-20 -z-20 left-0 lindungi" src="asset/budaya/batik.png" alt="">
+                    <div class="text-base md1:text-lg  lg1:text-2xl xl1:text-4xl my-5 opacity-50">
+                        Budaya Jawa yang diminati di luar negeri adalah Wayang kulit, Keris, Batik, Kebaya, dan Gamelan.
+                        Di
+                        Malaysia dan Filipina dikenal istilah keris karena pengaruh Majapahit.
+                    </div>
                 </div>
             </div>
-        </div>
 
 
 
-        <div class="w-[300px] lg1:w-[700px] h-[10px] bg-[#6F584E]  rounded-xl mt-16"></div>
-        <!-- 2. bali -->
-        <div
-            class="md1:flex text-center lg1:text-left mt-10 xl1:px-24 text-[#6F584E] mx-10 rounded-xl  py-10 items-center ">
-            <div class="px-5 lg1:px-0 lg1:ml-5 fade-in-right ">
+            <div class="w-[300px] lg1:w-[700px] h-[10px] bg-[#6F584E]  rounded-xl mt-16"></div>
+            <!-- 2. bali -->
+            <div data-aos="fade-right" data-aos-duration="800"
+                class="md1:flex text-center lg1:text-left mt-10 xl1:px-24 text-[#6F584E]  rounded-xl  py-10 items-center ">
+                <div class="px-5 lg1:px-0 lg1:ml-5 fade-in-right ">
+                    <div
+                        class="font-bold mt-10 lg1:mt-0 md1:text-5xl lg1:text-6xl xl1:text-7xl text-2xl caveat text-gradasi1 ">
+                        Budaya di
+                        Bali</div>
+                    <div class="text-base md1:text-lg  lg1:text-2xl xl1:text-4xl my-5 ">
+                        Bali juga memiliki keunikan dalam budaya yang dimilikinya seperti kesenian Bali meliputi
+                        tarian-tarian Bali seperti Tari Pendet, Tari Kecak, Tari Barong dan kegiatan sakral adat
+                        istiadat
+                        seperti ritual upacara-upacara adat yang sangat kental
+                    </div>
+                </div>
+                <div class="absolute fade-in bg-gradasi2 m-auto z-0  block md1:hidden w-[85%] h-[35%] rounded-full">
+                </div>
+                <img class="lindungi relative md1:w-[300px] lg1:w-[400px] z-50 xl1:w-[600px] xl2:w-[700px] w-[700px]  px-5 lg1:px-0 "
+                    src="asset/budaya/bali.png" alt="">
                 <div
-                    class="font-bold mt-10 lg1:mt-0 md1:text-5xl lg1:text-6xl xl1:text-7xl text-2xl caveat text-gradasi1 ">
-                    Budaya di
-                    Bali</div>
-                <div class="text-base md1:text-lg  lg1:text-2xl xl1:text-4xl my-5 ">
-                    Bali juga memiliki keunikan dalam budaya yang dimilikinya seperti kesenian Bali meliputi
-                    tarian-tarian Bali seperti Tari Pendet, Tari Kecak, Tari Barong dan kegiatan sakral adat istiadat
-                    seperti ritual upacara-upacara adat yang sangat kental
+                    class="absolute fade-in bg-gradasi2 m-auto z-0  hidden lg1:block right-[9rem]  lg1:w-[45%] lg1:h-[100%] rounded-full">
                 </div>
-            </div>
-            <div class="absolute fade-in bg-gradasi2 m-auto z-0  block md1:hidden w-[85%] h-[35%] rounded-full"></div>
-            <img class="lindungi md1:w-[300px] lg1:w-[400px] z-50 xl1:w-[600px] xl2:w-[700px] w-[700px]  px-5 lg1:px-0 fade-in-left"
-                src="asset/budaya/bali.png" alt="">
-            <div
-                class="absolute fade-in bg-gradasi2 m-auto z-0  hidden lg1:block right-[9rem]  lg1:w-[45%] lg1:h-[100%] rounded-full">
+
             </div>
 
-        </div>
 
 
-
-        <!-- 3. sumatera -->
-        <div
-            class="md1:flex text-center lg1:text-left mt-10 lg1:mt-20 bg-gradasi1 xl1:px-24 mx-10 rounded-xl shadow-2xl py-10 items-center text-white">
-            <div class="absolute fade-in bg-gradasi2 m-auto z-0  block md1:hidden w-[85%] h-[45%] rounded-full"></div>
-            <img class="lindungi md1:w-[300px] z-50 lg1:w-[400px] xl1:w-[600px] xl2:w-[700px] w-[700px] px-5 lg1:px-0  fade-in-left"
-                src="asset/budaya/sumatera.png" alt="">
-            <div
-                class="absolute fade-in bg-gradasi2 m-auto z-0  hidden lg1:block lg1:w-[45%] lg1:h-[100%] rounded-full">
-            </div>
-            <div class="px-5 lg1:px-0 lg1:ml-5 fade-in-right">
+            <!-- 3. sumatera -->
+            <div data-aos="fade-left" data-aos-duration="800"
+                class="md1:flex text-center lg1:text-left mt-10 lg1:mt-20 bg-gradasi1 xl1:px-24  rounded-xl shadow-2xl py-10 items-center text-white">
+                <div class="absolute fade-in bg-gradasi2 m-auto z-0  block md1:hidden w-[85%] h-[45%] rounded-full">
+                </div>
+                <img class="lindungi relative md1:w-[300px] z-50 lg1:w-[400px] xl1:w-[600px] xl2:w-[700px] w-[700px] px-5 lg1:px-0  "
+                    src="asset/budaya/sumatera.png" alt="">
                 <div
-                    class="font-bold mt-10 lg1:mt-0 md1:text-5xl lg1:text-6xl xl1:text-7xl text-2xl caveat text-gradasi2">
-                    Budaya di
-                    Sumatera
+                    class="absolute fade-in bg-gradasi2 m-auto z-0  hidden lg1:block lg1:w-[45%] lg1:h-[100%] rounded-full">
                 </div>
-                <img class="lindungi absolute opacity-20 -z-20 right-0 " src="asset/budaya/batik.png" alt="">
-                <div class="text-base md1:text-lg  lg1:text-2xl xl1:text-4xl my-5 opacity-50">
-                    Budaya Minangkabau sangat beragam, mulai dari pacu kudo, pacu jawi, seni tari, seni randai, tradisi
-                    makan bajamba, keroncong Minang, hingga pertunjukan silat. Semua itu dapat disaksikan dalam Festival
-                    Budaya Minangkabau 2019.
+                <div class="px-5 lg1:px-0 lg1:ml-5 fade-in-right">
+                    <div
+                        class="font-bold mt-10 lg1:mt-0 md1:text-5xl lg1:text-6xl xl1:text-7xl text-2xl caveat text-gradasi2">
+                        Budaya di
+                        Sumatera
+                    </div>
+                    <img class="lindungi  absolute opacity-20 -z-20 right-0 " src="asset/budaya/batik.png" alt="">
+                    <div class="text-base md1:text-lg  lg1:text-2xl xl1:text-4xl my-5 opacity-50">
+                        Budaya Minangkabau sangat beragam, mulai dari pacu kudo, pacu jawi, seni tari, seni randai,
+                        tradisi
+                        makan bajamba, keroncong Minang, hingga pertunjukan silat. Semua itu dapat disaksikan dalam
+                        Festival
+                        Budaya Minangkabau 2019.
+                    </div>
                 </div>
             </div>
-        </div>
 
 
 
-        <div class="w-[300px] lg1:w-[700px] h-[10px] bg-[#6F584E]  rounded-xl mt-16"></div>
-        <!-- 4. kalimantan -->
-        <div
-            class="md1:flex text-center lg1:text-left mt-10 xl1:px-24 text-[#6F584E] mx-10 rounded-xl  py-10 items-center">
-            <div class="px-5 lg1:px-0 lg1:ml-5 fade-in-right">
+            <div class="w-[300px] lg1:w-[700px] h-[10px] bg-[#6F584E]  rounded-xl mt-16"></div>
+            <!-- 4. kalimantan -->
+            <div data-aos="fade-right" data-aos-duration="800"
+                class="md1:flex text-center lg1:text-left mt-10 xl1:px-24 text-[#6F584E]  rounded-xl  py-10 items-center">
+                <div class="px-5 lg1:px-0 lg1:ml-5 fade-in-right">
+                    <div
+                        class="font-bold mt-10 lg1:mt-0 md1:text-5xl lg1:text-6xl xl1:text-7xl text-2xl caveat text-gradasi1">
+                        Budaya di
+                        Kalimantan
+                    </div>
+                    <div class="text-base md1:text-lg  lg1:text-2xl xl1:text-4xl my-5">
+                        Suku Dayak merupakan penduduk asli Pulau Kalimantan yang masih dapat dijumpai hingga sekarang.
+                        beberapa budaya yang berasal dari kalimantan adalah Rumah Panjang, pakaian King Baba, tarian
+                        Monang,
+                        Tari Mandau senjata Mandau.
+                    </div>
+                </div>
+                <div class="absolute fade-in bg-gradasi2 m-auto z-0  block md1:hidden w-[85%] h-[35%] rounded-full">
+                </div>
+                <img class=" lindungi relative z-50 md1:w-[300px] lg1:w-[400px] xl1:w-[600px] xl2:w-[700px] w-[700px] px-5 lg1:px-0  "
+                    src="asset/budaya/kalimantan.png" alt="">
                 <div
-                    class="font-bold mt-10 lg1:mt-0 md1:text-5xl lg1:text-6xl xl1:text-7xl text-2xl caveat text-gradasi1">
-                    Budaya di
-                    Kalimantan
-                </div>
-                <div class="text-base md1:text-lg  lg1:text-2xl xl1:text-4xl my-5">
-                    Suku Dayak merupakan penduduk asli Pulau Kalimantan yang masih dapat dijumpai hingga sekarang.
-                    beberapa budaya yang berasal dari kalimantan adalah Rumah Panjang, pakaian King Baba, tarian Monang,
-                    Tari Mandau senjata Mandau.
+                    class="absolute fade-in bg-gradasi2 m-auto z-0  hidden lg1:block right-[9rem]  lg1:w-[45%] lg1:h-[100%] rounded-full">
                 </div>
             </div>
-            <div class="absolute fade-in bg-gradasi2 m-auto z-0  block md1:hidden w-[85%] h-[35%] rounded-full"></div>
-            <img class=" lindungi z-50 md1:w-[300px] lg1:w-[400px] xl1:w-[600px] xl2:w-[700px] w-[700px] px-5 lg1:px-0  fade-in-left"
-                src="asset//budaya/kalimantan.png" alt="">
-            <div
-                class="absolute fade-in bg-gradasi2 m-auto z-0  hidden lg1:block right-[9rem]  lg1:w-[45%] lg1:h-[100%] rounded-full">
-            </div>
-        </div>
 
 
 
 
-        <!-- 5. Sulawesi -->
-        <div
-            class="md1:flex text-center lg1:text-left mt-10 lg1:mt-20 bg-gradasi1 xl1:px-24 mx-10 rounded-xl shadow-2xl py-10 items-center text-white">
-            <div class="absolute fade-in bg-gradasi2 m-auto z-0  block md1:hidden w-[85%] h-[40%] rounded-full"></div>
-            <img class="lindungi md1:w-[300px] z-50 lg1:w-[400px] xl1:w-[600px] xl2:w-[700px] w-[700px] px-5 lg1:px-0  fade-in-left"
-                src="asset/budaya/sulawesi.png" alt="">
-            <div
-                class="absolute fade-in bg-gradasi2 m-auto z-0  hidden lg1:block lg1:w-[45%] lg1:h-[100%] rounded-full">
-            </div>
-            <div class="px-5 lg1:px-0 lg1:ml-5 fade-in-right">
+            <!-- 5. Sulawesi -->
+            <div data-aos="fade-left" data-aos-duration="800"
+                class="md1:flex text-center lg1:text-left mt-10 lg1:mt-20 bg-gradasi1 xl1:px-24  rounded-xl shadow-2xl py-10 items-center text-white">
+                <div class="absolute fade-in bg-gradasi2 m-auto z-0  block md1:hidden w-[85%] h-[40%] rounded-full">
+                </div>
+                <img class="lindungi relative md1:w-[300px] z-50 lg1:w-[400px] xl1:w-[600px] xl2:w-[700px] w-[700px] px-5 lg1:px-0  "
+                    src="asset/budaya/sulawesi.png" alt="">
                 <div
-                    class="font-bold mt-10 lg1:mt-0 md1:text-5xl lg1:text-6xl xl1:text-7xl text-2xl caveat text-gradasi2">
-                    Budaya di
-                    Sulawesi
+                    class="absolute fade-in bg-gradasi2 m-auto z-0  hidden lg1:block lg1:w-[45%] lg1:h-[100%] rounded-full">
                 </div>
-                <img class="lindungi absolute opacity-20 -z-20 left-0" src="asset/budaya/batik.png" alt="">
-                <div class="text-base md1:text-lg  lg1:text-2xl xl1:text-4xl my-5 opacity-50">
-                    Terlebih lagi, Sulawesi Selatan memiliki beragam suku atau etnis besar yakni Makassar, Bugis,
-                    Toraja, dan juga Mandar yang saat ini sudah berada di wilayah Sulawesi Barat. Beberapa budaya di
-                    sulawesi yaitu Budaya Tabe, A'rate, Mattompang Arajang dan lainnya.
+                <div class="px-5 lg1:px-0 lg1:ml-5 fade-in-right">
+                    <div
+                        class="font-bold mt-10 lg1:mt-0 md1:text-5xl lg1:text-6xl xl1:text-7xl text-2xl caveat text-gradasi2">
+                        Budaya di
+                        Sulawesi
+                    </div>
+                    <img class="lindungi  absolute opacity-20 -z-20 left-0" src="asset/budaya/batik.png" alt="">
+                    <div class="text-base md1:text-lg  lg1:text-2xl xl1:text-4xl my-5 opacity-50">
+                        Terlebih lagi, Sulawesi Selatan memiliki beragam suku atau etnis besar yakni Makassar, Bugis,
+                        Toraja, dan juga Mandar yang saat ini sudah berada di wilayah Sulawesi Barat. Beberapa budaya di
+                        sulawesi yaitu Budaya Tabe, A'rate, Mattompang Arajang dan lainnya.
+                    </div>
                 </div>
             </div>
-        </div>
 
 
 
-        <div class="w-[300px] lg1:w-[700px] h-[10px] bg-[#6F584E]  rounded-xl mt-16"></div>
-        <!-- 6. papua -->
-        <div
-            class="md1:flex text-center lg1:text-left mt-10 xl1:px-24 text-[#6F584E] mx-10 rounded-xl  py-10 items-center">
-            <div class="px-5 lg1:px-0 lg1:ml-5 fade-in-right">
+            <div class="w-[300px] lg1:w-[700px] h-[10px] bg-[#6F584E]  rounded-xl mt-16"></div>
+            <!-- 6. papua -->
+            <div data-aos="fade-right" data-aos-duration="800"
+                class="md1:flex text-center lg1:text-left mt-10 xl1:px-24 text-[#6F584E] px-7 rounded-xl  py-10 items-center">
+                <div class="px-5 lg1:px-0 lg1:ml-5 fade-in-right">
+                    <div
+                        class="font-bold mt-10 lg1:mt-0 md1:text-5xl lg1:text-6xl xl1:text-7xl text-2xl caveat text-gradasi1">
+                        Budaya di
+                        Papua</div>
+                    <div class="text-base md1:text-lg  lg1:text-2xl xl1:text-4xl my-5">
+                        Budaya Papua meliputi seni ukiran kayu yang indah, tarian tradisional yang bersemangat, sistem
+                        kepercayaan tradisional, dan makanan khas seperti sagu dan hidangan laut.
+                    </div>
+                </div>
+                <div class="absolute fade-in bg-gradasi2 m-auto z-0  block md1:hidden w-[85%] h-[35%] rounded-full">
+                </div>
+                <img class="lindungi relative z-50 md1:w-[300px] lg1:w-[400px] xl1:w-[600px] xl2:w-[700px] w-[700px] px-5 lg1:px-0  "
+                    src="asset/budaya/papua.png" alt="">
                 <div
-                    class="font-bold mt-10 lg1:mt-0 md1:text-5xl lg1:text-6xl xl1:text-7xl text-2xl caveat text-gradasi1">
-                    Budaya di
-                    Papua</div>
-                <div class="text-base md1:text-lg  lg1:text-2xl xl1:text-4xl my-5">
-                    Budaya Papua meliputi seni ukiran kayu yang indah, tarian tradisional yang bersemangat, sistem
-                    kepercayaan tradisional, dan makanan khas seperti sagu dan hidangan laut.
+                    class="absolute fade-in bg-gradasi2 m-auto z-0  hidden lg1:block right-[7rem]  lg1:w-[45%] lg1:h-[100%] rounded-full">
                 </div>
             </div>
-            <div class="absolute fade-in bg-gradasi2 m-auto z-0  block md1:hidden w-[85%] h-[35%] rounded-full"></div>
-            <img class="lindungi z-50 md1:w-[300px] lg1:w-[400px] xl1:w-[600px] xl2:w-[700px] w-[700px] px-5 lg1:px-0  fade-in-left"
-                src="asset/budaya/papua.png" alt="">
-            <div
-                class="absolute fade-in bg-gradasi2 m-auto z-0  hidden lg1:block right-[7rem]  lg1:w-[45%] lg1:h-[100%] rounded-full">
-            </div>
+
         </div>
-
-
 
 
         <a href="#first">
@@ -214,7 +228,12 @@
             Design by <b>tim BEBEK</b> | SMKN 1 Purwokerto | Mari Lestarikan <b>Budaya Nusantara</b>
         </footer>
 
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 
 </html>
